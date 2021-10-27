@@ -1,0 +1,794 @@
+#   low level crafting
+#   low level hiding
+#   currency / divination / maps / jewels / etc
+#   defaults 
+#
+#
+#
+#
+
+# ////////////////////////////////       ALWAYS VISIBLE      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+
+
+# ////////////////////////////////       LOW LEVEL CRAFTING      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# increased physical damage weapon recipe   
+Show
+    ItemLevel < 35
+    BaseType "Rustic Sash"
+    Rarity = Magic
+    SetTextColor 139 195 74 225
+    SetBorderColor 79 195 247 125
+
+Show
+    ItemLevel < 35
+    BaseType "Rustic Sash"
+    Rarity = Rare
+    SetTextColor 255 235 59 225
+    SetBorderColor 79 195 247 125
+
+
+# ////////////////////////////////       LOW LEVEL VENDOR      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# Chromatic Items
+Show
+    LinkedSockets >= 3
+    Rarity = Normal
+    SocketGroup "RGB"
+    SetBorderColor 79 195 247 125
+
+Show
+    LinkedSockets >= 3
+    Rarity = Magic
+    SocketGroup "RGB"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 79 195 247 125
+
+# vendor will likely be for shards due to rare instead of chromatic
+#Show
+#    LinkedSockets >= 3
+#    Rarity = Rare
+#    SocketGroup "RGB"
+#    #SetBackgroundColor 255 245 157 75
+#    SetTextColor 255 235 59 225
+#    SetBorderColor 79 195 247 125
+
+
+
+
+# ////////////////////////////////       HIDE LEVEL DIFFERENCE      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# basic, equippable items that are ~> 10 ilevel higher than droplevel
+# and have less than 5 Sockets
+# and are normal or magic
+
+# NORMALS
+Show
+    ItemLevel < 12
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 13
+    DropLevel >= 2
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 14
+    DropLevel >= 4
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 16
+    DropLevel >= 6
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 18
+    DropLevel >= 8
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 20
+    DropLevel >= 10
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 22
+    DropLevel >= 13
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 24
+    DropLevel >= 16
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 26
+    DropLevel >= 18
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 28
+    DropLevel >= 20
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 30
+    DropLevel >= 22
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 32
+    DropLevel >= 24
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 34
+    DropLevel >= 26
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 36
+    DropLevel >= 30
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 38
+    DropLevel >= 32
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 40
+    DropLevel >= 34
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 42
+    DropLevel >= 35
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 46
+    DropLevel >= 40
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 48
+    DropLevel >= 42
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 50
+    DropLevel >= 44
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 52
+    DropLevel >= 46
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 54
+    DropLevel >= 48
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 56
+    DropLevel >= 52
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+Show
+    ItemLevel < 58
+    DropLevel >= 54
+    Sockets < 5
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+#Show
+#    ItemLevel < 60
+#    DropLevel >= 56
+#    Sockets < 5
+#    Rarity = Normal
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#
+#Show
+#    ItemLevel < 62
+#    DropLevel >= 58
+#    Sockets < 5
+#    Rarity = Normal
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#
+#Show
+#    ItemLevel < 64
+#    DropLevel >= 60
+#    Sockets < 5
+#    Rarity = Normal
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#
+#Show
+#    ItemLevel < 66
+#    DropLevel >= 62
+#    Sockets < 5
+#    Rarity = Normal
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#
+#Show
+#    ItemLevel < 68
+#    DropLevel >= 64
+#    Sockets < 5
+#    Rarity = Normal
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+
+# MAGICS
+Show
+    ItemLevel < 12
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 13
+    DropLevel >= 2
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 14
+    DropLevel >= 4
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 16
+    DropLevel >= 6
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 18
+    DropLevel >= 8
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 20
+    DropLevel >= 10
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 22
+    DropLevel >= 13
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 24
+    DropLevel >= 16
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 26
+    DropLevel >= 18
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 28
+    DropLevel >= 20
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 30
+    DropLevel >= 22
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 32
+    DropLevel >= 24
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 34
+    DropLevel >= 26
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 36
+    DropLevel >= 30
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 38
+    DropLevel >= 32
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 40
+    DropLevel >= 34
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 42
+    DropLevel >= 35
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 46
+    DropLevel >= 40
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 48
+    DropLevel >= 42
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 50
+    DropLevel >= 44
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 52
+    DropLevel >= 46
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 54
+    DropLevel >= 48
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 56
+    DropLevel >= 52
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+Show
+    ItemLevel < 58
+    DropLevel >= 54
+    Sockets < 5
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+
+#Show
+#    ItemLevel < 60
+#    DropLevel >= 56
+#    Sockets < 5
+#    Rarity = Magic
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#    #SetBackgroundColor 197 225 165 75
+#    SetTextColor 139 195 74 225
+#
+#Show
+#    ItemLevel < 62
+#    DropLevel >= 58
+#    Sockets < 5
+#    Rarity = Magic
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#    #SetBackgroundColor 197 225 165 75
+#    SetTextColor 139 195 74 225
+#
+#Show
+#    ItemLevel < 64
+#    DropLevel >= 60
+#    Sockets < 5
+#    Rarity = Magic
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#    #SetBackgroundColor 197 225 165 75
+#    SetTextColor 139 195 74 225
+#
+#Show
+#    ItemLevel < 66
+#    DropLevel >= 62
+#    Sockets < 5
+#    Rarity = Magic
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#    #SetBackgroundColor 197 225 165 75
+#    SetTextColor 139 195 74 225
+#
+#Show
+#    ItemLevel < 68
+#    DropLevel >= 64
+#    Sockets < 5
+#    Rarity = Magic
+#    Class "Life Flask" "Mana Flask" "Amulets" "Rings" "Quiver" "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+#    #SetBackgroundColor 197 225 165 75
+#    SetTextColor 139 195 74 225
+
+
+# SKILL GEMS
+Show
+    Class Gem
+
+Show
+    BaseType "Awakened"
+    Class "Support Skill Gem"
+    SetTextColor 27 162 155 225
+    SetBorderColor 27 162 155 225
+
+# FLASKS
+Show
+    Class "Utility Flasks"
+    Rarity = Normal
+    SetBorderColor 77 208 225 225
+
+Show
+    Class "Utility Flasks"
+    Rarity = Magic
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 77 208 225 225
+
+
+# QUEST ITEMS
+Show
+    Class "Quest Items"
+    #SetBackgroundColor 165 214 167 75
+    SetTextColor 76 175 80 225
+    SetBorderColor 129 199 132 225
+
+# DIVINATION CARDS
+Show
+    Class "Card"
+    #SetBackgroundColor 244 143 177 75
+    SetTextColor 233 30 99 225
+    SetFontSize 37
+    PlayAlertSound 5 200
+
+# CURRENCY
+Show
+    BaseType "Mirror of Kalandra"
+    #SetBackgroundColor 206 147 216 75
+    SetTextColor 156 39 176 225
+    SetBorderColor 186 104 200 125
+    SetFontSize 45
+    PlayAlertSound 9 300
+
+Show
+    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
+    #SetBackgroundColor 206 147 216 75
+    SetTextColor 156 39 176 225
+    SetFontSize 42
+    PlayAlertSound 8 300
+
+Show
+    BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
+    #SetBackgroundColor 179 157 219 75
+    SetTextColor 3 169 244 225
+    SetBorderColor 79 195 247 225
+    SetFontSize 36
+    PlayAlertSound 6 200
+
+Show
+    Class "Currency"
+    #SetBackgroundColor 179 157 219 75
+    SetTextColor 3 169 244 225
+    #PlayAlertSound 1 100
+
+
+# ////////////////////////////////     VENDOR RECIPES    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# VENDOR (Blacksmith's Whetstones & Armorer's Scraps)
+Show
+    Quality = 20
+    Rarity = Normal
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    SetBorderColor 79 195 247 125
+
+Show
+    Quality = 20
+    Rarity = Magic
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 79 195 247 125
+
+Show
+    Quality = 20
+    Rarity = Rare
+    Class "Claw" "Dagger" "Wand" "One Hand" "Thrusting" "Bow" "Staves" "Two Hand" "Belt" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres"
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 79 195 247 125
+
+
+# VENDOR (Glassblower's Baubles (Vendor 40% Total Quality))
+Show
+    Quality >= 10
+    Rarity = Normal
+    Class "Life Flask" "Mana Flask" "Hybrid Flask" "Utility Flask"
+    SetBorderColor 79 195 247 125
+
+Show
+    Quality >= 10
+    Rarity = Magic
+    Class "Life Flask" "Mana Flask" "Hybrid Flask" "Utility Flask"
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 79 195 247 125
+
+
+# VENDOR (Chisel Recipe (20% Hammer + Any Endgame Map))
+Show
+    Rarity = Normal
+    Quality >= 10
+    BaseType "Gavel" "Stone Hammer" "Rock Breaker"
+    SetBorderColor 79 195 247 125
+
+
+# VENDOR (7 Jewelers)
+Show
+    Rarity = Normal
+    Sockets = 6
+    LinkedSockets < 5
+    SetBorderColor 79 195 247 125
+
+Show
+    Rarity = Magic
+    Sockets = 6
+    LinkedSockets < 5
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 79 195 247 125
+
+Show
+    Rarity = Rare
+    Sockets = 6
+    LinkedSockets < 5
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 79 195 247 125
+
+
+
+
+
+
+# ////////////////////////////////     CRAFTING ITEMS    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# UNIQUES TO CHANCE
+Show
+    ItemLevel > 60
+    Rarity = Normal
+    BaseType "Occultist's Vestment" "Spine Bow" "Prophecy Wand" "Judgement Staff" "Amethyst Ring" "Gold Ring" "Imperial Bow" "Glorious Plate"
+    SetBorderColor 255 183 77 225
+
+# 5 & 6 Links
+Show
+    LinkedSockets >= 5
+    Rarity = Normal
+    SetBorderColor 255 183 77 225
+    SetFontSize 38
+    PlayAlertSound 3 200
+
+Show
+    LinkedSockets >= 5
+    Rarity = Magic
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 255 183 77 225
+    SetFontSize 38
+    PlayAlertSound 3 200
+
+Show
+    LinkedSockets >= 5
+    Rarity = Rare
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 183 77 225
+    SetFontSize 38
+    PlayAlertSound 3 200
+
+# ////////////////////////////////      BASE COLORS     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# JEWELS
+Show
+    BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
+    SetTextColor 139 195 74 225
+    SetBorderColor 77 182 172 225    
+
+Show
+    Class "Jewel"
+    Rarity = Magic
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetBorderColor 77 182 172 225
+
+Show
+    Class "Jewel"
+    Rarity = Rare
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 255 235 59 225
+    SetBorderColor 77 182 172 225
+
+Show
+    Class "Jewel"
+    Rarity = Unique
+    #SetBackgroundColor 255 204 128 75
+    SetTextColor 255 152 0 225
+    SetBorderColor 77 182 172 225
+    SetFontSize 36
+    PlayAlertSound 7 300
+
+
+#MAPS
+Show
+    Class "Maps" "Map Fragments"
+    Rarity = Normal
+    SetTextColor 244 67 54 225
+    PlayAlertSound 4 200
+
+Show
+    Class "Maps" "Map Fragments"
+    Rarity = Magic
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 244 67 54 225
+    SetBorderColor 174 213 129 225
+    PlayAlertSound 4 200
+
+Show
+    Class "Maps" "Map Fragments"
+    Rarity = Rare
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 244 67 54 225
+    SetBorderColor 255 241 118 225
+    PlayAlertSound 4 250
+
+Show
+    Class "Maps" "Map Fragments"
+    Rarity = Unique
+    #SetBackgroundColor 255 204 128 75
+    SetTextColor 244 67 54 225
+    SetBorderColor 255 183 77 225
+    SetFontSize 36
+    PlayAlertSound 4 300
+
+
+
+
+
+# ////////////////////////////////       DEFAULTS       \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+Show
+    Rarity = Rare
+    ItemLevel >= 60
+    SetTextColor 255 235 59 225
+    SetBorderColor 255 235 59 225
+
+# RARITY
+Show
+    Rarity = Rare
+    #SetBackgroundColor 255 245 157 75
+    SetTextColor 255 235 59 225
+
+Show
+    Rarity = Unique
+    #SetBackgroundColor 255 204 128 75
+    SetTextColor 255 152 0 225
+    SetFontSize 36
+    PlayAlertSound 7 300
+
+
+
+
+
+
+
+
+# RARITY
+Hide
+    Rarity = Magic
+    #SetBackgroundColor 197 225 165 75
+    SetTextColor 139 195 74 225
+    SetFontSize 26
+
+Hide
+    Rarity = Normal
+    SetFontSize 26
