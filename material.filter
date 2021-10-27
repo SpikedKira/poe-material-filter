@@ -504,14 +504,18 @@ Show
 
 
 # SKILL GEMS
+# using default colors currently
 Show
+    AlternateQuality True
     Class Gem
-
-Show
-    BaseType "Awakened"
-    Class "Support Skill Gem"
     SetTextColor 27 162 155 225
     SetBorderColor 27 162 155 225
+
+Show
+    Class Gem
+    SetTextColor 27 162 155 225
+    SetBorderColor 27 162 155 225
+
 
 # FLASKS
 Show
