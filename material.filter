@@ -543,7 +543,7 @@ Show
     #SetBackgroundColor 244 143 177 75
     SetTextColor 233 30 99 225
     SetFontSize 37
-    PlayAlertSound 5 200
+    PlayAlertSound 4 200
 
 # CURRENCY
 Show
@@ -552,14 +552,14 @@ Show
     SetTextColor 156 39 176 225
     SetBorderColor 186 104 200 125
     SetFontSize 45
-    PlayAlertSound 9 300
+    PlayAlertSound 2 300
 
 Show
     BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
     #SetBackgroundColor 206 147 216 75
     SetTextColor 156 39 176 225
     SetFontSize 42
-    PlayAlertSound 8 300
+    PlayAlertSound 3 300
 
 Show
     BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
@@ -567,7 +567,7 @@ Show
     SetTextColor 3 169 244 225
     SetBorderColor 79 195 247 225
     SetFontSize 36
-    PlayAlertSound 6 200
+    PlayAlertSound 10 200
 
 Show
     Class "Currency"
@@ -718,7 +718,7 @@ Show
     SetTextColor 255 152 0 225
     SetBorderColor 77 182 172 225
     SetFontSize 36
-    PlayAlertSound 7 300
+    PlayAlertSound 6 300
 
 
 #MAPS
@@ -751,7 +751,7 @@ Show
     SetTextColor 244 67 54 225
     SetBorderColor 255 183 77 225
     SetFontSize 36
-    PlayAlertSound 4 300
+    PlayAlertSound 6 300
 
 
 
@@ -776,7 +776,7 @@ Show
     #SetBackgroundColor 255 204 128 75
     SetTextColor 255 152 0 225
     SetFontSize 36
-    PlayAlertSound 7 300
+    PlayAlertSound 6 300
 
 
 
