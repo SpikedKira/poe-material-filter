@@ -1,21 +1,30 @@
 #   low level crafting
 #   low level hiding
 #   currency / divination / maps / jewels / etc
-#   defaults 
+#   defaults
+#
+#   if you don't like the color flipped magic items, do the following:
+#   find replace: "174 213 129 125" with "$blueborder$"
+#                 "139 195 74 225" with "$bluetext$"
+#                 "121 134 203 125" with "174 213 129 125"
+#                 "63 81 181 225" with "139 195 74 225"
+#                 "$blueborder$" with "121 134 203 125"
+#                 "$bluetext$" with "63 81 181 225"
 #
 #   https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 #
 #   Borders: 300
 #   Text: 500
 #
+#   Colors:
 #   Light Green 50, 300 |    #aed581    |    174 213 129 125    |    Magic items
 #   Light Green 50, 500 |    #8bc34a    |    139 195 74 225     |
 #   Yellow 50, 300      |    #fff176    |    255 241 118 125    |    Rares
 #   Yellow 50, 500      |    #ffeb3b    |    255 235 59 225     |
 #   Orange 50, 300      |    #ffb74d    |    255 183 77 125     |    Uniques and chance to Unique
 #   Orange 50, 500      |    #ff9800    |    255 152 0 225      |
-#   Light Blue 50, 300  |    #4fc3f7    |    79 195 247 125     |    Chromatic and rustic sash
-#   Light Blue 50, 500  |    #03a9f4    |    3 169 244 225      |    Currency
+#   Light Blue 50, 300  |    #4fc3f7    |    79 195 247 125     |    Currency and Vendor recipe currency
+#   Light Blue 50, 500  |    #03a9f4    |    3 169 244 225      |
 #   Cyan 50, 300        |    #4dd0e1    |    77 208 225 225     |    Utility flasks
 #   Green 50, 300       |    #81c784    |    129 199 132 225    |    Quest items
 #   Green 50, 500       |    #4caf50    |    76 175 80 225      |    Quest items
@@ -25,16 +34,27 @@
 #   Teal 50, 500        |    #009688    |    0 150 136 225      |    Jewels
 #   Purple 50, 300      |    #ba68c8    |    186 104 200 125    |    Tier 1 currency
 #   Purple 50, 500      |    #9c27b0    |    156 39 176 225     |
+#   Indigo 50, 300      |    #7986CB    |    121 134 203 125    |    Special interest items
+#   Indigo 50, 500      |    #3F51B5    |    63 81 181 225      |
+#
+#   Map Icons:
+#   Unique              |    MinimapIcon 2 Orange Circle
+#   High Currency       |    MinimapIcon 2 Purple Cross
+#   Special Currency    |    MinimapIcon 2 Cyan UpsideDownHouse
+#
 #
 #   maps are inverted; border shows rarity
 #
-#   [ ] add special base types to special interest colors (indigo?)
-#   [ ] do something with 5 and 6 links
+#   [x] add special base types to special interest colors (indigo?)
+#   [x] do something with 5 and 6 links
 #   [x] jewel colors need to be flipped like maps
-#   [ ] cluster jewels need more love
+#   [x] cluster jewels need more love
 #   [ ] gems are using default colors
 #   [x] show more gavels when needed
-#   [ ] add map icons/markers
+#   [x] add map icons/markers
+#   [ ] add new top tier currency types
+#   [x] add special interest currency
+#   [ ] influenced, elder, shaper items
 
 # ////////////////////////////////       ALWAYS VISIBLE      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
 
@@ -609,6 +629,11 @@ Show
     SetTextColor 76 175 80 225
     SetBorderColor 129 199 132 225
 
+Show
+    Class "Labyrinth Item" "Labyrinth Trinket"
+    SetTextColor 76 175 80 225
+    SetBorderColor 129 199 132 225
+
 # DIVINATION CARDS
 Show
     Class "Card"
@@ -619,21 +644,35 @@ Show
 
 # CURRENCY
 Show
+    Class "Currency"
     BaseType "Mirror of Kalandra"
     #SetBackgroundColor 206 147 216 75
     SetTextColor 156 39 176 225
     SetBorderColor 186 104 200 125
     SetFontSize 45
     PlayAlertSound 2 300
+    MinimapIcon 2 Purple Cross
 
 Show
+    Class "Currency"
     BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
     #SetBackgroundColor 206 147 216 75
     SetTextColor 156 39 176 225
     SetFontSize 42
     PlayAlertSound 3 300
+    MinimapIcon 2 Purple Cross
 
 Show
+    Class "Currency"
+    BaseType "Blessing" "Catalyst" "Sextant" "Vial" "Fossil" "Resonator" "Oil" "Essence"
+    SetTextColor 3 169 244 225
+    SetBorderColor 79 195 247 225
+    SetFontSize 40
+    PlayAlertSound 10 200
+    MinimapIcon 2 Cyan UpsideDownHouse
+
+Show
+    Class "Currency"
     BaseType "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
     #SetBackgroundColor 179 157 219 75
     SetTextColor 3 169 244 225
@@ -661,7 +700,7 @@ Show
 Show
     LinkedSockets >= 5
     Rarity = Normal
-    SetBorderColor 255 183 77 225
+    SetBorderColor 121 134 203 125
     SetFontSize 38
     PlayAlertSound 3 200
 
@@ -670,7 +709,7 @@ Show
     Rarity = Magic
     #SetBackgroundColor 197 225 165 75
     SetTextColor 139 195 74 225
-    SetBorderColor 255 183 77 225
+    SetBorderColor 121 134 203 125
     SetFontSize 38
     PlayAlertSound 3 200
 
@@ -679,19 +718,59 @@ Show
     Rarity = Rare
     #SetBackgroundColor 255 245 157 75
     SetTextColor 255 235 59 225
-    SetBorderColor 255 183 77 225
+    SetBorderColor 121 134 203 125
     SetFontSize 38
     PlayAlertSound 3 200
+
+
+# ///////////////////////////     SPECIAL INTEREST ITEMS    \\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
+
+# experimental item types
+Show
+    Rarity = Normal
+    BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
+Show
+    Rarity = Magic
+    BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
+    SetTextColor 139 195 74 225
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
+Show
+    Rarity = Rare
+    BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
+    SetTextColor 255 235 59 225
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
+# cluster jewels
+Show
+    Rarity = Normal
+    BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
+Show
+    Rarity = Magic
+    BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
+    SetTextColor 139 195 74 225
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
+Show
+    Rarity = Rare
+    BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
+    SetTextColor 255 235 59 225
+    SetBorderColor 121 134 203 125
+    SetFontSize 30
+
 
 # ////////////////////////////////      BASE COLORS     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
 
 # JEWELS
-Show
-    BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
-    SetTextColor 0 150 136 225
-    SetBorderColor 77 182 172 125
-    SetFontSize 30   
-
 Show
     Class "Jewel"
     Rarity = Magic
@@ -754,11 +833,12 @@ Show
 
 # ////////////////////////////////       DEFAULTS       \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ #
 
+# chaos recipe
 Show
     Rarity = Rare
     ItemLevel >= 60
     SetTextColor 255 235 59 225
-    SetBorderColor 255 235 59 225
+    SetBorderColor 255 241 118 125
 
 # RARITY
 Show
@@ -772,6 +852,7 @@ Show
     SetTextColor 255 152 0 225
     SetFontSize 36
     PlayAlertSound 6 300
+    MinimapIcon 2 Orange Circle
 
 
 
