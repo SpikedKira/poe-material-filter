@@ -797,13 +797,13 @@ Show
 
 #MAPS
 Show
-    Class "Maps" "Map Fragments"
+    Class "Maps" "Map Fragments" "Logbook"
     Rarity = Normal
     SetTextColor 244 67 54 225
     PlayAlertSound 4 200
 
 Show
-    Class "Maps" "Map Fragments"
+    Class "Maps" "Map Fragments" "Logbook"
     Rarity = Magic
     #SetBackgroundColor 197 225 165 75
     SetTextColor 244 67 54 225
@@ -811,7 +811,7 @@ Show
     PlayAlertSound 4 200
 
 Show
-    Class "Maps" "Map Fragments"
+    Class "Maps" "Map Fragments" "Logbook"
     Rarity = Rare
     #SetBackgroundColor 255 245 157 75
     SetTextColor 244 67 54 225
@@ -819,7 +819,7 @@ Show
     PlayAlertSound 4 250
 
 Show
-    Class "Maps" "Map Fragments"
+    Class "Maps" "Map Fragments" "Logbook"
     Rarity = Unique
     #SetBackgroundColor 255 204 128 75
     SetTextColor 244 67 54 225
