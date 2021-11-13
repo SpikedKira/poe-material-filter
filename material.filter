@@ -4,12 +4,12 @@
 #   defaults
 #
 #   if you don't like the color flipped magic items, do the following:
-#   find replace: "174 213 129 125" with "$blueborder$"
-#                 "139 195 74 225" with "$bluetext$"
-#                 "121 134 203 125" with "174 213 129 125"
-#                 "63 81 181 225" with "139 195 74 225"
-#                 "$blueborder$" with "121 134 203 125"
-#                 "$bluetext$" with "63 81 181 225"
+#   find replace: "174 213 129" with "$blueborder$"
+#                 "139 195 74" with "$bluetext$"
+#                 "121 134 203" with "174 213 129"
+#                 "63 81 181" with "139 195 74"
+#                 "$blueborder$" with "121 134 203"
+#                 "$bluetext$" with "63 81 181"
 #
 #   https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 #
@@ -648,7 +648,7 @@ Show
     BaseType "Mirror of Kalandra"
     #SetBackgroundColor 206 147 216 75
     SetTextColor 156 39 176 225
-    SetBorderColor 186 104 200 125
+    SetBorderColor 186 104 200 225
     SetFontSize 45
     PlayAlertSound 2 300
     MinimapIcon 2 Purple Cross
@@ -700,7 +700,7 @@ Show
 Show
     LinkedSockets >= 5
     Rarity = Normal
-    SetBorderColor 121 134 203 125
+    SetBorderColor 121 134 203 255
     SetFontSize 38
     PlayAlertSound 3 200
 
@@ -709,7 +709,7 @@ Show
     Rarity = Magic
     #SetBackgroundColor 197 225 165 75
     SetTextColor 139 195 74 225
-    SetBorderColor 121 134 203 125
+    SetBorderColor 121 134 203 255
     SetFontSize 38
     PlayAlertSound 3 200
 
@@ -718,7 +718,7 @@ Show
     Rarity = Rare
     #SetBackgroundColor 255 245 157 75
     SetTextColor 255 235 59 225
-    SetBorderColor 121 134 203 125
+    SetBorderColor 121 134 203 255
     SetFontSize 38
     PlayAlertSound 3 200
 
@@ -729,42 +729,42 @@ Show
 Show
     Rarity = Normal
     BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 Show
     Rarity = Magic
     BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
     SetTextColor 139 195 74 225
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 Show
     Rarity = Rare
     BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
     SetTextColor 255 235 59 225
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 # cluster jewels
 Show
     Rarity = Normal
     BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 Show
     Rarity = Magic
     BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
     SetTextColor 139 195 74 225
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 Show
     Rarity = Rare
     BaseType "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel"
     SetTextColor 255 235 59 225
-    SetBorderColor 121 134 203 125
+    SetBackgroundColor 121 134 203 125
     SetFontSize 30
 
 
@@ -776,21 +776,21 @@ Show
     Rarity = Magic
     #SetBackgroundColor 197 225 165 75
     SetTextColor 0 150 136 225
-    SetBorderColor 174 213 129 125
+    SetBorderColor 174 213 129 255
 
 Show
     Class "Jewel"
     Rarity = Rare
     #SetBackgroundColor 255 245 157 75
     SetTextColor 0 150 136 225
-    SetBorderColor 255 241 118 125
+    SetBorderColor 255 241 118 255
 
 Show
     Class "Jewel"
     Rarity = Unique
     #SetBackgroundColor 255 204 128 75
     SetTextColor 0 150 136 225
-    SetBorderColor 255 183 77 125
+    SetBorderColor 255 183 77 255
     SetFontSize 36
     PlayAlertSound 6 300
 
@@ -807,7 +807,7 @@ Show
     Rarity = Magic
     #SetBackgroundColor 197 225 165 75
     SetTextColor 244 67 54 225
-    SetBorderColor 174 213 129 125
+    SetBorderColor 174 213 129 255
     PlayAlertSound 4 200
 
 Show
@@ -815,7 +815,7 @@ Show
     Rarity = Rare
     #SetBackgroundColor 255 245 157 75
     SetTextColor 244 67 54 225
-    SetBorderColor 255 241 118 125
+    SetBorderColor 255 241 118 255
     PlayAlertSound 4 250
 
 Show
@@ -823,7 +823,7 @@ Show
     Rarity = Unique
     #SetBackgroundColor 255 204 128 75
     SetTextColor 244 67 54 225
-    SetBorderColor 255 183 77 125
+    SetBorderColor 255 183 77 255
     SetFontSize 36
     PlayAlertSound 6 300
 
